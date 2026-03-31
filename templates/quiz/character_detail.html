@@ -1,0 +1,22 @@
+{% extends "quiz/base.html" %}
+
+{% block title %}{{ character.name }} | Zelda Character Quiz{% endblock %}
+
+{% block content %}
+<section class="card">
+    <h2>{{ character.name }}</h2>
+    <p class="subtitle">{{ character.title }}</p>
+    <p>{{ character.description }}</p>
+
+    <h3>Traits</h3>
+    <ul class="traits-list">
+        {% for trait in traits %}
+            <li>{{ trait }}</li>
+        {% endfor %}
+    </ul>
+
+    <p>
+        <a class="button" href="{% url 'quiz' %}">Take the Quiz Again</a>
+    </p>
+</section>
+{% endblock %}

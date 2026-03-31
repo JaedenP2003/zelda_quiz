@@ -1,0 +1,29 @@
+{% extends "quiz/base.html" %}
+
+{% block title %}Quiz | Zelda Character Quiz{% endblock %}
+
+{% block content %}
+<section class="card">
+    <h2>Answer the Questions</h2>
+    <p>Pick the answer that feels most like you. Try not to overthink it.</p>
+
+    <form method="post" action="{% url 'quiz' %}">
+        {% csrf_token %}
+
+        {% for question in questions %}
+            <div class="question-block">
+                <h3>{{ forloop.counter }}. {{ question.text }}</h3>
+
+                {% for answer in question.answers %}
+                    <label class="answer-option">
+                        <input type="radio" name="{{ question.id }}" value="{{ answer.value }}" required>
+                        <span>{{ answer.text }}</span>
+                    </label>
+                {% endfor %}
+            </div>
+        {% endfor %}
+
+        <button class="button" type="submit">See My Result</button>
+    </form>
+</section>
+{% endblock %}

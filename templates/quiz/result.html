@@ -1,0 +1,37 @@
+{% extends "quiz/base.html" %}
+
+{% block title %}Your Result | Zelda Character Quiz{% endblock %}
+
+{% block content %}
+<section class="card result-card">
+    <h2>You Are {{ winner.name }}</h2>
+    <p class="subtitle">{{ winner.title }}</p>
+    <p>{{ winner.description }}</p>
+
+    <p>
+        <a class="button secondary" href="{% url 'character_detail' winner_slug %}">
+            Learn More About {{ winner.name }}
+        </a>
+    </p>
+</section>
+
+<section class="card">
+    <h2>Your Top Matches</h2>
+
+    {% for item in percentages %}
+        <div class="result-row">
+            <div class="result-label">
+                <strong>{{ item.name }}</strong>
+                <span>{{ item.percent }}%</span>
+            </div>
+            <div class="bar">
+                <div class="fill" style="width: {{ item.percent }}%;"></div>
+            </div>
+        </div>
+    {% endfor %}
+</section>
+
+<section class="card">
+    <a class="button" href="{% url 'quiz' %}">Take the Quiz Again</a>
+</section>
+{% endblock %}

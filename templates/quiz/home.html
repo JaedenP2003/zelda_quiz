@@ -1,0 +1,14 @@
+{% extends "quiz/base.html" %}
+
+{% block title %}Home | Zelda Character Quiz{% endblock %}
+
+{% block content %}
+<section class="card hero">
+    <h2>Which Legend of Zelda Character Are You?</h2>
+    <p>
+        This quiz is built to be a little harder to game than the usual character quizzes.
+        The questions focus on personality and decision-making instead of obvious character hints.
+    </p>
+    <a class="button" href="{% url 'quiz' %}">Start the Quiz</a>
+</section>
+{% endblock %}
