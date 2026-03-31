@@ -42,8 +42,8 @@ Character Detail Page (character_detail.html)
 * This page provides additional information about the selected character. It is dynamically generated using a URL parameter (slug), which allows different character pages to be loaded without creating separate HTML files for each one.
 
 Page Flow
-Home → Quiz → Result → Character Detail
-Each transition is handled through Django routing and view functions.
+* Home → Quiz → Result → Character Detail
+* Each transition is handled through Django routing and view functions.
 
 # Development Environment
 
