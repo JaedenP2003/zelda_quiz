@@ -1,6 +1,6 @@
 # Overview
 
-As a software engineering student, I wanted to build a web application that helped me better understand how backend frameworks handle user input and dynamically generate content. My goal with this project was to gain hands-on experience with Django, especially how it processes requests, manages templates, and handles logic on the server side.
+I wanted to build a web application that helped me better understand how backend frameworks handle user input and dynamically generate content. My goal with this project was to gain hands-on experience with Django, especially how it processes requests, manages templates, and handles logic on the server side.
 
 This project is a Zelda Character Quiz web app built using Django. Users answer a series of personality-based questions, and the app determines which Legend of Zelda character they most closely match. The results are generated dynamically based on the user’s input, making each experience slightly different.
 
@@ -65,7 +65,6 @@ Django was used to handle routing, form processing, and dynamic content generati
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [Django Official Documentation](https://docs.djangoproject.com/en/6.0/)
 * [Real Python Django Tutorials](https://realpython.com/tutorials/django/)
 * [W3Schools HTML & CSS Reference](https://www.w3schools.com/html/default.asp)
@@ -73,7 +72,6 @@ Django was used to handle routing, form processing, and dynamic content generati
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
 * Improve the quiz scoring system to be more nuanced and less predictable
 * Add images for each character to improve visual presentation
 * Store quiz results in a database to track user history or analytics
