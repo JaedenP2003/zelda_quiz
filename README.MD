@@ -26,16 +26,20 @@ Structuring a small full-stack web application
 # Web Pages
 
 Home Page (home.html)
-This is the landing page of the application. It introduces the quiz and provides a button that takes the user to the quiz page. This page is simple but sets up the flow of the app.
+
+* This is the landing page of the application. It introduces the quiz and provides a button that takes the user to the quiz page. This page is simple but sets up the flow of the app.
 
 Quiz Page (quiz.html)
-This page displays all of the quiz questions. The questions and answer choices are generated dynamically from data stored in views.py. The user selects answers and submits the form, which sends their input to the backend.
+
+* This page displays all of the quiz questions. The questions and answer choices are generated dynamically from data stored in views.py. The user selects answers and submits the form, which sends their input to the backend.
 
 Result Page (result.html)
-After submitting the quiz, the app processes the user’s answers and calculates a score for each character. This page displays the character the user matched with, along with a description and percentage breakdown of top matches. All of this content is dynamically generated based on the user’s input.
+
+* After submitting the quiz, the app processes the user’s answers and calculates a score for each character. This page displays the character the user matched with, along with a description and percentage breakdown of top matches. All of this content is dynamically generated based on the user’s input.
 
 Character Detail Page (character_detail.html)
-This page provides additional information about the selected character. It is dynamically generated using a URL parameter (slug), which allows different character pages to be loaded without creating separate HTML files for each one.
+
+* This page provides additional information about the selected character. It is dynamically generated using a URL parameter (slug), which allows different character pages to be loaded without creating separate HTML files for each one.
 
 Page Flow
 Home → Quiz → Result → Character Detail
